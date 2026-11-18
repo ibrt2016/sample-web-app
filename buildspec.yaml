@@ -20,6 +20,14 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+# New section starts here
+reports:
+  coverage:
+    files:
+      - coverage.xml
+    file-format: CLOVERXML
+
+# New section ends here
 
 artifacts:
   files:
